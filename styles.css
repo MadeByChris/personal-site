@@ -1,0 +1,122 @@
+body {
+    /* background-image: linear-gradient(to bottom right, rgba(148, 144, 114, 0.219), rgb(26, 26, 26), rgb(26, 26, 26), rgb(26, 26, 26) ,rgb(26, 26, 26), rgb(26, 26, 26)); */
+    /* height: max-content;
+    width: max-content; */
+    margin: auto;
+    background-color: rgb(5, 5, 5);
+    background-image: linear-gradient(#222222, #191919, #161616, #131313, #101010, #070707, #040404, #010101, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.horizonatal-center-cheat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#splash-container {
+    display:flex;
+    flex-direction: row;
+    max-width:fit-content;
+}
+
+#profile-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:55vw;
+    animation: popInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#profile-photo-container,
+#profile-header-container {
+    margin-top: 5%;
+    vertical-align: middle;
+}
+#profile-photo-container {
+    display: flex;
+    justify-content: center;
+    width:38vw;
+    margin-left: 7vw;
+}
+
+.header-bold {
+    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+    margin-bottom: 0%;
+
+}
+
+.header-medium {
+    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+
+.plain-text {
+    color: white;
+    font-size: 2.5em;
+}
+
+#profile-photo {
+    border-radius: 50%;
+    height: 35em;
+    width:35em;
+    animation: popInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border: 1%;
+    /* border: 2px solid grey; */
+}
+#detailed-personal-description {
+    margin-top: 6%;
+}
+
+.with-border-image {
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 1;
+    border-radius: 40px;
+}
+
+#experience-card {
+    margin: 5% 10% 2% 10%;
+    height: 55vh;
+    padding: 1% 2% 2% 2%;
+    border: double 5px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+.card-header {
+    color: white;
+    font-size: 2.5em;    
+}
+
+
+@keyframes popInAnimation {
+    0% {
+        opacity: 0;
+        margin-top: 10%;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 5%;
+     }
+}
