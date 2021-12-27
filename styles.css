@@ -91,6 +91,12 @@ body {
     border: 1%;
     /* border: 2px solid grey; */
 }
+#tierfortress {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 .card-logo {
     border-radius: 20%;
     height: 8em;
@@ -106,23 +112,37 @@ body {
 #detailed-personal-description {
     margin-top: 6%;
 }
-
+/* 
 .with-border-image {
     border-style: solid;
     border-width: 10px;
     border-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 1;
     border-radius: 40px;
-}
+} */
 
-#experience-card {
+.experience-card {
     margin: 5% 10% 2% 10%;
     height:fit-content;
     padding: 1% 2% 2% 2%;
     border: double 5px transparent;
     border-radius: 80px;
-    background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    background-color: rgb(30, 27, 46);
+
+}
+
+.experience-card-no-padding {
+    margin: 5% 10% 2% 10%;
+    height:fit-content;
+    padding:1% 0% 2% 2%;
+    border: double 5px transparent;
+    border-radius: 80px;
+    /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-color: rgb(30, 27, 46);
 
 }
 
