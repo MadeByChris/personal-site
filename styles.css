@@ -91,7 +91,7 @@ body {
     border: 1%;
     /* border: 2px solid grey; */
 }
-#tierfortress {
+#tf-image {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
@@ -121,11 +121,11 @@ body {
 } */
 
 .experience-card {
-    margin: 5% 10% 2% 10%;
+    margin: 5% 13% 1% 13%;
     height:fit-content;
     padding: 1% 2% 2% 2%;
     border: double 5px transparent;
-    border-radius: 80px;
+    border-radius: 30px;
     /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -134,16 +134,20 @@ body {
 }
 
 .experience-card-no-padding {
-    margin: 5% 10% 2% 10%;
+    margin: 1% 13% 1% 13%;
     height:fit-content;
     padding:1% 0% 2% 2%;
-    border: double 5px transparent;
-    border-radius: 80px;
+    /* border: double 5px transparent; */
+    border-radius: 30px;
     /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    background-color: rgb(30, 27, 46);
+    background: rgb(23,17,124);
+    background: linear-gradient(45deg, rgba(23,17,124,1) 0%, rgba(78,78,200,1) 50%, rgba(179,65,255,1) 100%);
+}
 
+#tf-body {
+    min-width: 30%
 }
 
 .card-header {
@@ -163,28 +167,41 @@ body {
 }
 
 a {
+    color:white;
     display: inline;
     padding-bottom: 1px;
     text-decoration: none;
-    background-image: linear-gradient(transparent, transparent),linear-gradient(transparent, transparent),linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background-repeat: no-repeat;
-    background-position: bottom;
-
-}
-a {
-    color:white;
     background: 
         linear-gradient(to right, #d16ba5, #d16ba5),
         linear-gradient(to right, #8d8088, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background-size: 100% 0.25em, 0 0.25em;
+    background-size: 100% 0.2em, 0 0.2em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 300ms;
 }
 
+#tf-header {
+    font-size: 5em;
+    color:rgb(194, 180, 245);
+}
+#tf-header:hover,
+#tf-header:focus {
+    color:rgb(255, 255, 255);
+}
+
+#tf-subheader {
+    margin-top: 1%;
+}
+
 a:hover,
 a:focus {
-background-size: 0 0.25em, 100% 0.25em;
+background-size: 0 0.2em, 100% 0.2em;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 @keyframes popInAnimation {
