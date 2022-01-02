@@ -54,7 +54,6 @@ body {
     font-size: 5em;
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     margin-bottom: 0%;
-
 }
 
 .header-medium {
@@ -68,6 +67,10 @@ body {
     margin-top: 1%;
 }
 
+.xl-text-white {
+    color: white;
+    font-size: 4em;
+}
 .large-text-white {
     color: white;
     font-size: 2.5em;
@@ -220,9 +223,9 @@ background-size: 0 0.2em, 100% 0.2em;
 }
 
 .envote-card {
-    margin: 4% 0% 1% 0%;
+    margin: 4% 0% 0% 0%;
     height:fit-content;
-    padding:2% 0% 0.5% 0%;
+    padding:4% 0% 5% 0%;
     /* border: double 5px transparent; */
     /* border-radius: 30px; */
     /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
@@ -278,15 +281,57 @@ button:focus {
     /* border-radius: 50px; */
 }
 
-#blog-card {
-    margin-top: 9%;
-    height: 80vh;
-    background-image: linear-gradient(#000000, #d1c49b);
+.logo {
+    height: 15vh;
+    width: auto;
+    margin-right: 2%;
 }
 
-@keyframs jump {
-    0%
+#education-card {
+    margin-top: 0%;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left right";
+    /* background-image: linear-gradient(#000000, #d1c49b); */
 }
+#education-card-left {
+    grid-area: left;
+    background-color: #003C71;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#education-card-right {
+    grid-area: right;
+    background-color: #B5111B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sfu-logo {
+    background-color: #B5111B;
+    border: solid 2px white;
+}
+
+.education-header {
+    display:flex;
+    flex-direction: row;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.bordered-box {
+    padding-right: 3px;
+    padding-bottom: 3px;
+    background-color: white;
+}
+
 @keyframes popInAnimation {
     0% {
         opacity: 0;
