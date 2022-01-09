@@ -9,8 +9,16 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-#splash-con
-
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6%;
+    background-color: #242424;
+    z-index: 1000;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
 .horizonatal-center-cheat {
     display: flex;
     flex-direction: row;
@@ -65,6 +73,12 @@ body {
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     margin-bottom: 0%;
     margin-top: 1%;
+}
+
+.xxl-text-white {
+    color: white;
+    font-size: 5.5em;
+    margin: 0%;
 }
 
 .xl-text-white {
@@ -282,34 +296,39 @@ button:focus {
 }
 
 .logo {
-    height: 15vh;
+    height:20%;
     width: auto;
-    margin-right: 2%;
 }
 
 #education-card {
     margin-top: 0%;
-    height: 80vh;
+    height: 40%;
     background-color: white;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    grid-auto-rows: minmax(min-content, max-content);
     grid-template-areas: "left right";
-    /* background-image: linear-gradient(#000000, #d1c49b); */
 }
 #education-card-left {
+    padding-top: 4%;
     grid-area: left;
     background-color: #003C71;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height:fit-content;
+
 }
 
 #education-card-right {
+    padding-top: 4%;
     grid-area: right;
     background-color: #B5111B;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height:fit-content;
 }
 
 #sfu-logo {
@@ -318,8 +337,12 @@ button:focus {
 }
 
 .education-header {
-    display:flex;
-    flex-direction: row;
+    /* display:flex;
+    flex-direction: row; */
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .centered-text {
