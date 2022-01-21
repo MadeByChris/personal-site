@@ -19,6 +19,31 @@ body {
     /* border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px; */
 }
+.header-icon {
+    /* font-size:36px; */
+    color:white;
+    transition: color 0.3s;
+}
+.header-icon:hover {
+    color:#41dfff;
+
+}
+@keyframes selectIcon {
+    0% {
+        color:white;
+    }
+    100% {
+        color:#41dfff;
+    }
+}
+@keyframes unselectIcon {
+    0% {
+        color:#41dfff;
+    }
+    100% {
+        color:#ffffff;
+    }
+}
 .horizonatal-center-cheat {
     display: flex;
     flex-direction: row;
@@ -240,9 +265,6 @@ background-size: 0 0.2em, 100% 0.2em;
     margin: 4% 0% 0% 0%;
     height:fit-content;
     padding:4% 0% 5% 0%;
-    /* border: double 5px transparent; */
-    /* border-radius: 30px; */
-    /* background-image: linear-gradient(rgb(30, 27, 46),rgb(31, 31, 31)), linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     background-origin: border-box;
     background-clip: padding-box, border-box;
     background: rgb(23,17,124);
