@@ -13,8 +13,8 @@
 
 <body>
     <div id="header">
-        <i class = "fa fa-github header-icon" style="font-size: 36px;"></i>
-        <i class = "fa fa-linkedin header-icon" style="font-size: 36px;"></i>
+        <i class = "fa fa-github header-icon pointer-hover" style="font-size: 36px;"></i>
+        <i class = "fa fa-linkedin header-icon pointer-hover" style="font-size: 36px;"></i>
 
     </div>
 
@@ -38,8 +38,8 @@
                 <p class="card-header medium-text-white">Jan 2021 - Aug 2021</p>
             </div>
             <div class="space-between-cards card-body">
-                <img src="images/optigo-logo.jfif" class="card-logo" />
-                <p class=" card-header small-text-white">I joined <a href="https://www.optigo.net/"
+                <img src="images/optigo-logo.jfif" onclick="openLink('https:\/\/www.optigo.net/')" class="card-logo pointer-hover" class="pointer-hover" />
+                <p class=" card-header small-text-white optigo-body">I joined <a href="https://www.optigo.net/"
                         target="blank_">Optigo Networks</a> as a Quality Assurance Engineer as my first technical job.
                     In this time I designed and implemented an automated suite of API tests, conducted extensive
                     hardware and software testing, and learned the ins and outs of the agile framework.
@@ -58,19 +58,39 @@
     <div class="horizontal-center-cheat">
         <div class="experience-card-no-padding" id="tierfortress-card" class="with-border-image">
             <div class="space-between-cards">
-                <p>
-                    <b><a href="http://tierfortress.com" target="_blank" id="tf-header">Tier Fortress</a></b>
-                </p>
+                <div class="flex-row">
+                    <p>
+                        <b><a href="http://tierfortress.com" target="_blank" id="tf-header">Tier Fortress</a></b>
+                    </p>
+                    <i class = "fa fa-github header-icon tierfortress-git-icon pointer-hover" style="font-size: 52px;"></i>
+                </div>
                 <p class="card-header medium-text-white" id="tf-date" style="margin-right: 3%">Jun 2020 - Aug 2020</p>
             </div>
             <div class="space-between-cards">
                 <div id="tf-body">
                     <p class="card-header large-text-white" id="tf-subheader"><b>Personal Project</b></p>
-                    <p class="medium-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="medium-text-white">A web application for visualizing community ratings for items for the videogame Team Fortress 2.<br><br>
+                        Over <em><b>5000 data points</b></em> were collected from <em><b>140 unique users</b></em> and transformed into an easy to parse application.
+                    </p>
+                    <table>
+                        <tr style="display: flex; align-items: flex-start;">
+                            <th class="medium-text-white" >Tech Stack</th>
+                        </tr>
+                        <tr>
+                            <td class="medium-text-white">• JavaScript</td>
+                            <td class="medium-text-white table-row-two"> • HTML</td>
+                        </tr>
+                        <tr>
+                            <td class="medium-text-white">• JQuery</td>
+                            <td class="medium-text-white table-row-two"> • CSS</td>
+                        </tr>
+                        <tr>
+                            <td class="medium-text-white">• MySQL</td>
+                            <td class="medium-text-white table-row-two"> • PHP</td>
+                        </tr>
+                    </table>
                 </div>
-                <img src="images/tierfortress-on-laptop-left.png" id="tf-image">
+                <img src="images/tierfortress-on-laptop-left.png" onclick="openLink('https:\/\/tierfortress.com')" class="pointer-hover" id="tf-image">
             </div>
         </div>
     </div>
@@ -119,6 +139,11 @@
         </div>
     </div>
     </div>
+    <script>
+        const openLink = (link) => {
+            window.open(link)
+        }
+    </script>
 </body>
 
 </html>
