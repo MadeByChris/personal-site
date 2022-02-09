@@ -649,6 +649,32 @@ img:hover {
     }
 
 }
+@media screen and (max-width: 800px) {
+    #single-envote-image {
+        display: none;
+    }
+    #envote-text {
+        margin-top: 0%;
+        padding: 3%;
+        background-image: url("images/jungle-background.jpg");
+    }
+    .two-cards,
+    #envote-text,
+    .card {
+        width:auto;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #envote-header {
+        font-size: 2.5em;
+    }
+    #envote-container {
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+    }
+}
 @media screen and (max-width: 600px) {
     .small-text-white {
         font-size: 1em;
@@ -688,12 +714,22 @@ img:hover {
         margin-left:4%;
         margin-right:4%;
     }
-    .two-cards {
-        width:92%;
-    }
     .program-name {
         font-size: 1.2em;
     }
+    #single-envote-image {
+        display: none;
+    }
+    /* #envote-text {
+        width: 80%;
+        margin-top: 11%;
+        padding: 3%;
+    } */
+    #envote-header {
+        font-size: 2.5em;
+    }
+
+
 }
 @media screen and (max-width: 400px) {
     .small-text-white {
@@ -709,7 +745,7 @@ img:hover {
         font-size: 2.5em;
     }
     .large-text-white {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .xl-text-white, .xxl-text-white {
         font-size: 3.2em;
