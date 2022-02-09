@@ -156,18 +156,84 @@ body {
 #detailed-personal-description {
     margin-top: 6%;
 }
-
+.card {
+    margin: 1% 13% 1% 13%;
+    border-radius: 30px;
+    padding: 1% 2% 2% 2%;
+}
 .experience-card {
     margin: 5% 13% 1% 13%;
-    height:fit-content;
-    padding: 1% 2% 2% 2%;
+    /* height:fit-content;
+    padding: 1% 2% 2% 2%; */
     border: double 5px transparent;
     border-radius: 30px;
     background-origin: border-box;
     background-clip: padding-box, border-box;
     background-color: rgb(30, 27, 46);
-
 }
+
+.two-cards {
+    margin: 1% 13% 1% 13%;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30%;
+
+    padding: 0% 0% 0% 0%;
+}
+.education-card-1, .education-card-2 {
+    color:white;
+}
+
+.education-card-1 {
+    padding: 7% 0% 0% 0%;
+    background-color: #003C71;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.education-card-2 {
+    padding: 7% 0% 0% 0%;
+    background-color: #B5111B;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.half-card {
+    width: 50%;
+}
+.program-name {
+    height:2em;
+}
+#education-card {
+    margin-top: 0%;
+    height: 40%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-areas: "left right";
+}
+#education-card-left {
+    padding-top: 4%;
+    grid-area: left;
+    background-color: #003C71;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:fit-content;
+}
+
+#education-card-right {
+    padding-top: 4%;
+    grid-area: right;
+    background-color: #B5111B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:fit-content;
+}
+
 
 .flex-row {
     display: flex;
@@ -340,7 +406,6 @@ button {
     flex-direction: column;
     justify-content: center;
     height:fit-content;
-
 }
 
 #education-card-right {
