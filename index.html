@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris' Website</title>
-    <link rel="stylesheet" href="glitch.scss" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <script src="https://kit.fontawesome.com/f67a83c178.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,9 +24,12 @@
             <p class="medium-text-white">Christopher Spooner</p>
         </div>
         <div id="header-icons">
-            <i class = "fa fa-github header-icon pointer-hover" onclick="openLink(GITHUB_LINK)" style="font-size: 36px;"></i>
-            <i class = "fa fa-linkedin header-icon pointer-hover" onclick="openLink(LINKEDIN_LINK)" style="font-size: 36px;"></i>
-            <i class = "fab fa-hackerrank header-icon pointer-hover" onclick="openLink(HACKER_RANK_LINK)" style="font-size: 36px;"></i>
+            <i class="fa fa-github header-icon pointer-hover" onclick="openLink(GITHUB_LINK)"
+                style="font-size: 36px;"></i>
+            <i class="fa fa-linkedin header-icon pointer-hover" onclick="openLink(LINKEDIN_LINK)"
+                style="font-size: 36px;"></i>
+            <i class="fab fa-hackerrank header-icon pointer-hover" onclick="openLink(HACKER_RANK_LINK)"
+                style="font-size: 36px;"></i>
         </div>
     </div>
 
@@ -38,24 +44,30 @@
             <h1 class="header-medium">A Full Stack Developer.</h1>
             <p class="large-text-white" id="detailed-personal-description">I love making sense of complex things<br>and
                 bringing end to end applications to life.</p>
+            <p class="large-text-white" id="mobile-detailed-personal-description">I love making sense of complex things
+                and bringing end to end applications to life.</p>
         </div>
     </div>
     <div class="horizontal-center-cheat">
         <div class="card experience-card">
             <div class="space-between-cards">
-                <p class="card-header large-text-white" style="font-family:'Ubuntu', sans-serif">
-                <b>Quality Assurance Engineer Co-op</b></p>
+                <p class="card-header large-text-white qa-header" style="font-family:'Ubuntu', sans-serif"><b>Quality
+                        Assurance Engineer Co-op</b></p>
+                <p class="card-header large-text-white mobile-qa-header" style="font-family:'Ubuntu', sans-serif"><b>QA
+                        Engineer Co-op</b></p>
                 <p class="card-header medium-text-white">Jan 2021 - Aug 2021</p>
             </div>
             <div class="space-between-cards card-body">
-                <img src="images/optigo-logo.jfif" onclick="openLink('https:\/\/www.optigo.net/')" class="card-logo pointer-hover" class="pointer-hover" />
+                <img src="images/optigo-logo.jfif" onclick="openLink('https:\/\/www.optigo.net/')"
+                    class="card-logo pointer-hover" class="pointer-hover" />
                 <p class=" card-header medium-text-white optigo-body">I joined <a href="https://www.optigo.net/"
                         target="blank_">Optigo Networks</a> as a Quality Assurance Engineer as my first technical job.
                     In this time I designed and implemented an automated suite of API tests, conducted extensive
                     hardware and software testing, and learned the ins and outs of the agile framework.
                     <br>
                     <br>
-                    After a while I was moved to the developer team where I gained experience developing production features on a distributed
+                    After a while I was moved to the developer team where I gained experience developing production
+                    features on a distributed
                     system in JavaScript, Python, MongoDB, and SQL.
                     <br>
                     <br>
@@ -74,6 +86,7 @@
                 </div>
                 <div class="school-content">
                     <p class="large-text-white centered-text program-name">Diploma, Computer Systems Technology</p>
+                    <p class="large-text-white centered-text mobile-program-name">Diploma, CST</p>
                     <p class="large-text-white centered-text">2020 - 2022</p>
                 </div>
             </div>
@@ -83,6 +96,7 @@
                 </div>
                 <div class="school-content">
                     <p class="large-text-white centered-text program-name">Bachelor of Arts, Criminology</p>
+                    <p class="large-text-white centered-text mobile-program-name">Bachelor of Arts, Criminology</p>
                     <p class="large-text-white centered-text">2015 - 2019</p>
                 </div>
             </div>
@@ -95,40 +109,48 @@
                     <p>
                         <b><a href="http://tierfortress.com" target="_blank" id="tf-header">Tier Fortress</a></b>
                     </p>
-                    <i class = "fa fa-github header-icon tierfortress-git-icon pointer-hover" onclick="openLink(GITHUB_LINK)" style="font-size: 52px;"></i>
+                    <i class="fa fa-github header-icon tierfortress-git-icon pointer-hover"
+                        onclick="openLink(GITHUB_LINK)" style="font-size: 52px;"></i>
                 </div>
                 <p class="card-header medium-text-white" id="tf-date" style="margin-right: 3%">Jun 2020 - Aug 2020</p>
             </div>
             <div class="space-between-cards">
                 <div id="tf-body">
                     <p class="card-header large-text-white" id="tf-subheader"><b>Personal Project</b></p>
-                    <p class="medium-text-white">A web application for visualizing community ratings for items for the videogame Team Fortress 2.<br><br>
-                        Over <em><b>5000 data points</b></em> were collected from <em><b>140 unique users</b></em> and transformed into an easy to parse application.
-                    </p>
-                    <table>
-                        <tr style="display: flex; align-items: flex-start;">
-                            <th class="medium-text-white" >Tech Stack</th>
-                        </tr>
-                        <tr>
-                            <td class="medium-text-white">• JavaScript</td>
-                            <td class="medium-text-white table-row-two"> • HTML</td>
-                        </tr>
-                        <tr>
-                            <td class="medium-text-white">• JQuery</td>
-                            <td class="medium-text-white table-row-two"> • CSS</td>
-                        </tr>
-                        <tr>
-                            <td class="medium-text-white">• MySQL</td>
-                            <td class="medium-text-white table-row-two"> • PHP</td>
-                        </tr>
-                    </table>
+                    <div id="tier-fortress-text">
+                        <p class="tf-text-white">A web application for visualizing community ratings for items for
+                            the
+                            videogame Team Fortress 2.<br><br>
+                            Over <em><b>5000 data points</b></em> were collected from <em><b>140 unique users</b></em>
+                            and
+                            transformed into an easy to parse application.
+                        </p>
+                        <table>
+                            <tr style="display: flex; align-items: flex-start;">
+                                <th class="tf-text-white">Tech Stack</th>
+                            </tr>
+                            <tr>
+                                <td class="tf-text-white">• JavaScript</td>
+                                <td class="tf-text-white table-row-two"> • HTML</td>
+                            </tr>
+                            <tr>
+                                <td class="tf-text-white">• JQuery</td>
+                                <td class="tf-text-white table-row-two"> • CSS</td>
+                            </tr>
+                            <tr>
+                                <td class="tf-text-white">• MySQL</td>
+                                <td class="tf-text-white table-row-two"> • PHP</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <img src="images/tierfortress-on-laptop-left.png" onclick="openLink('https:\/\/tierfortress.com')" class="pointer-hover" id="tf-image">
+                <img src="images/tierfortress-on-laptop-left.png" onclick="openLink('https:\/\/tierfortress.com')"
+                    class="pointer-hover" id="tf-image">
             </div>
         </div>
     </div>
 
-    <div class="horizontal-center-cheat">
+    <!-- <div class="horizontal-center-cheat">
         <div class="card experience-card-no-padding" id="tierfortress-card" class="with-border-image">
             <div class="space-between-cards">
                 <div class="flex-row">
@@ -166,33 +188,36 @@
                 <img src="images/tierfortress-on-laptop-left.png" onclick="openLink('https:\/\/tierfortress.com')" class="pointer-hover" id="tf-image">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="horizontal-center-cheat">
         <div id="envote-container" class="envote-card">
             <img src="images/envote.png" id="envote-image">
             <img src="images/one-phone.png" id="single-envote-image">
             <div id="envote-text">
-                <div class="bundled-content">
-                    <p id="envote-header">
-                        <b>
-                            EnVote
-                        </b>
-                    </p>
-                    <p class="card-header large-text-white" id="tf-subheader"><b>Group Project</b></p>
-                    <p class="card-header medium-text-white" id="tf-date">Sep 2021 - Dec 2021</p>
-                    <p class="small-text-white" style="padding-top: 1%;">An Android application that streamlines the
-                        process of emailing government representatives about environmental concerns.<br><br>In 5 clicks
-                        the user will select their jurisdiction, the desired issue, and the representative they wish to
-                        message<br><br>The user is brought to a templated email with appropriate text, subjects, and
-                        addresses which can be sent by the user.</p>
-                </div>
-                <div id="envote-button">
-                    <button class="xs-text-white">Get EnVote</button>
+                <div class="black-opacity-background">
+                    <div class="bundled-content">
+                        <p id="envote-header">
+                            <b>
+                                EnVote
+                            </b>
+                        </p>
+                        <p class="card-header large-text-white" id="tf-subheader"><b>Group Project</b></p>
+                        <p class="card-header medium-text-white" id="tf-date">Sep 2021 - Dec 2021</p>
+                        <p class="small-text-white" style="padding-top: 1%;">An Android application that streamlines the
+                            process of emailing government representatives about environmental concerns.<br><br>In 5
+                            clicks
+                            the user will select their jurisdiction, the desired issue, and the representative they wish
+                            to
+                            message<br><br>The user is brought to a templated email with appropriate text, subjects, and
+                            addresses which can be sent by the user.</p>
+                    </div>
+                    <div id="envote-button">
+                        <button class="xs-text-white">Get EnVote</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script>
         const HACKER_RANK_LINK = "https://www.hackerrank.com/Christopher_Spo2";
